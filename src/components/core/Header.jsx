@@ -1,5 +1,6 @@
 import React from 'react';
 import { GithubCorner } from './GithubCorner';
+import './Header.scss';
 
 // @todo replace inline color style with classes
 
