@@ -5,6 +5,7 @@ import Header from './core/Header';
 import KeywordsInput from './search/KeywordsInput';
 import Labels from './toggles/Labels';
 import Languages from './toggles/Languages';
+import TogglesContainer from './toggles/TogglesContainer';
 import LoadingSpinner from './statuses/LoadingSpinner';
 import InitialGreeting from './statuses/InitialGreeting';
 import SearchResultsContainer from './search/SearchResultsContainer';
@@ -195,10 +196,14 @@ class App extends React.Component {
           SearchContainer
           Ternary section
         */}
-        <Header />
 
-        <Labels labels={labels} onToggleChange={this.onToggleChange} />
-        <Languages languages={languages} onToggleChange={this.onToggleChange} />
+        <Header />
+        <TogglesContainer
+          labels={labels}
+          languages={languages}
+          onToggleChange={this.onToggleChange}
+        />
+
         <KeywordsInput handleTextChange={this.handleTextChange} textToSearch={textToSearch} />
 
         <Button
