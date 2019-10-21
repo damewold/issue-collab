@@ -189,6 +189,12 @@ class App extends React.Component {
 
     return (
       <div className="app-wrapper">
+        {/*
+          Header
+          TogglesContainer
+          SearchContainer
+          Ternary section
+        */}
         <Header />
 
         <Labels labels={labels} onToggleChange={this.onToggleChange} />

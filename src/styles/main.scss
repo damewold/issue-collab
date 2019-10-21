@@ -14,42 +14,42 @@ body {
 .app-wrapper {
   max-width: 800px;
   margin: 0 auto;
-  display: grid;
-  grid-gap: 10px 0;
-  justify-items: center;
-  align-items: center;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 65px 235px 45px 60px auto;
-  grid-template-areas:
-    'head head . .'
-    'labels labels languages languages'
-    '. keywords keywords .'
-    '. get reset .'
-    'results results results results';
+  // display: grid;
+  // grid-gap: 10px 0;
+  // justify-items: center;
+  // align-items: center;
+  // grid-template-columns: repeat(4, 1fr);
+  // grid-template-rows: 65px 235px 45px 60px auto;
+  // grid-template-areas:
+  //   'head head . .'
+  //   'labels labels languages languages'
+  //   '. keywords keywords .'
+  //   '. get reset .'
+  //   'results results results results';
 }
 
 .page-header {
-  grid-area: head;
+  // grid-area: head;
 
   .page-title {
     font-family: 'Roboto Mono', monospace;
   }
 }
 
-.labels-group {
-  grid-area: labels;
-}
+// .labels-group {
+//   grid-area: labels;
+// }
 
-.languages-group {
-  grid-area: languages;
-}
+// .languages-group {
+//   grid-area: languages;
+// }
 
-.keywords-input {
-  grid-area: keywords;
-}
+// .keywords-input {
+//   grid-area: keywords;
+// }
 
 .results-container {
-  grid-area: results;
+  // grid-area: results;
   max-width: 800px;
 
   @media only screen and (max-width: 800px) {
@@ -58,30 +58,30 @@ body {
 }
 
 .get-btn {
-  grid-area: get;
-  justify-self: end;
+  // grid-area: get;
+  // justify-self: end;
   margin-right: 10px !important;
   background-color: $color10 !important;
 }
 
 .reset-btn {
-  grid-area: reset;
-  justify-self: start;
+  // grid-area: reset;
+  // justify-self: start;
   margin-left: 10px !important;
   background-color: $color12;
   width: 148.75px;
 }
 
 .loading-spinner {
-  grid-area: loading;
-  grid-column: 2 / 4;
-  grid-row: 6 / 7;
+  // grid-area: loading;
+  // grid-column: 2 / 4;
+  // grid-row: 6 / 7;
   margin-top: 50px;
 }
 
 .greeting-card-wrapper {
-  grid-column: 1 / 5;
-  grid-row: 6 / 7;
+  // grid-column: 1 / 5;
+  // grid-row: 6 / 7;
   text-align: center;
 
   p {
@@ -126,7 +126,6 @@ body {
   .greeting-img {
     width: auto;
     height: 6rem;
-    // float: right;
   }
 }
 
