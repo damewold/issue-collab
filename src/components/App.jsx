@@ -2,9 +2,7 @@
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import Header from './core/Header';
-import KeywordsInput from './search/KeywordsInput';
-import Labels from './toggles/Labels';
-import Languages from './toggles/Languages';
+import SearchContainer from './search/SearchContainer';
 import TogglesContainer from './toggles/TogglesContainer';
 import LoadingSpinner from './statuses/LoadingSpinner';
 import InitialGreeting from './statuses/InitialGreeting';
@@ -190,43 +188,19 @@ class App extends React.Component {
 
     return (
       <div className="app-wrapper">
-        {/*
-          Header
-          TogglesContainer
-          SearchContainer
-          Ternary section
-        */}
-
         <Header />
         <TogglesContainer
           labels={labels}
           languages={languages}
           onToggleChange={this.onToggleChange}
         />
-
-        <KeywordsInput handleTextChange={this.handleTextChange} textToSearch={textToSearch} />
-
-        <Button
-          className="get-btn"
-          color="primary"
-          variant="contained"
-          disabled={isFetching || isButtonLocked}
-          onClick={this.getIssues}
-          type="submit"
-          size="large"
-        >
-          Load Issues
-        </Button>
-
-        <Button
-          color="secondary"
-          variant="contained"
-          className="reset-btn"
-          onClick={this.onReset}
-          size="large"
-        >
-          Reset
-        </Button>
+        <SearchContainer
+          handleTextChange={this.handleTextChange}
+          textToSearch={textToSearch}
+          isGetButtonDisabled={isFetching || isButtonLocked}
+          getIssues={this.getIssues}
+          onReset={this.onReset}
+        />
 
         {isEmpty ? (
           isFetching ? (
