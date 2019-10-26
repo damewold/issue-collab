@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Roboto+Mono&display=swap');
-@import './variables';
+@import './_variables';
+@import './_normalize.scss';
 
 body {
   font-family: 'Lato', sans-serif;
