@@ -1,11 +1,10 @@
 import React from 'react';
 import Labels from './Labels';
 import Languages from './Languages';
-
-// @todo add emotion for styled components
+import './TogglesContainer.scss';
 
 const TogglesContainer = ({ labels, languages, onToggleChange }) => (
-  <div>
+  <div className="toggles-container">
     <Labels labels={labels} onToggleChange={onToggleChange} />
     <Languages languages={languages} onToggleChange={onToggleChange} />
   </div>
