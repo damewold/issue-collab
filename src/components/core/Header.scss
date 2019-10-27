@@ -1,8 +1,8 @@
 .page-header {
-  height: 50px;
   margin: 30px 0 40px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 
   &-title {
     font-family: 'Roboto Mono', monospace;
@@ -10,10 +10,12 @@
   }
 
   .github-link {
-    align-self: flex-end;
-    
+    align-self: center;
+    justify-content: center;
+    height: 18px;
+
     &-icon {
-      height: 20px;
+      height: 18px;
       margin-left: 20px;
     }
   }
