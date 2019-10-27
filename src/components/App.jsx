@@ -1,21 +1,18 @@
-/* eslint-disable no-nested-ternary */
-/* eslint-disable react/destructuring-assignment */
 import React from 'react';
+import { formatLabelsForUrl, formatTextToSearch, joinItemsForUrl } from '../utils/formatting';
+import { baseUrl, sortOptions } from '../utils/constants';
+import './App.scss';
 import Header from './core/Header';
 import SearchContainer from './search/SearchContainer';
 import TogglesContainer from './toggles/TogglesContainer';
 import LoadingSpinner from './statuses/LoadingSpinner';
 import InitialGreeting from './statuses/InitialGreeting';
 import SearchResultsContainer from './search/SearchResultsContainer';
-import { formatLabelsForUrl, formatTextToSearch, joinItemsForUrl } from '../utils/formatting';
-import { baseUrl, sortOptions } from '../utils/constants';
-import '../styles/main.scss';
-import Button from '@material-ui/core/Button';
 
 class App extends React.Component {
   state = {
     labels: {
-      hacktoberfest: true,
+      hacktoberfest: false,
       goodFirstIssue: false,
       helpWanted: false,
       documentation: false,
