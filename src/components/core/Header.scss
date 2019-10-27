@@ -9,9 +9,12 @@
     font-size: 1.8em;
   }
 
-  .github-icon {
-    height: 22px;
+  .github-link {
     align-self: flex-end;
-    margin-left: 20px;
+    
+    &-icon {
+      height: 20px;
+      margin-left: 20px;
+    }
   }
 }

@@ -7,7 +7,14 @@ const Header = () => (
     <h2 className="page-header-title">
       <span style={{ color: '#3498db' }}>Issue</span>-<span style={{ color: 'black' }}>Collab</span>
     </h2>
-    <img className="github-icon" src={icon} alt="github-logo" />
+    <a
+      className="github-link"
+      href="https://github.com/trybick/issue-collab"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img className="github-link-icon" src={icon} alt="github-logo" />
+    </a>
   </div>
 );
 
